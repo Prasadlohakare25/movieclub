@@ -1,0 +1,11 @@
+#sideoption{
+    display: flex;
+    justify-content: space-around;
+
+}
+#divone{
+    margin: 0 10px;
+}
+#divtwo{
+    margin: 0 10px;
+}
