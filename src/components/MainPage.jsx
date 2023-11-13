@@ -3,6 +3,7 @@ import Img from "./images/tv.png";
 import Img1 from "./images/img2.jpg";
 import Img2 from "./images/img3.png";
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 function MainPage() {
     return (
@@ -19,7 +20,9 @@ function MainPage() {
                             </select>
                         </div>
                         <div className='mx-5'>
-                            <button className='bg-red-600 bg-opacity-90 border-none p-1 rounded-sm px-2'>Sign In</button>
+                            <Link to='/Sign In'>
+                                <button className='bg-red-600 bg-opacity-90 border-none p-1 rounded-sm px-2'>Sign In</button>
+                            </Link>
                         </div>
                     </nav>
                 </navbar>
@@ -28,7 +31,9 @@ function MainPage() {
                     <div>
                         <p className='text-slate-100 text-2xl'>Ready to bing? Enter your email and sign up now</p></div>
                     <div>
-                        <button className='bg-red-600 bg-opacity-80 border rounded-sm px-2 p-1 text-slate-100 font-medium text-lg m-3'>Sign Up</button>
+                        <Link to='/Sign up'>
+                            <button className='bg-red-600 bg-opacity-80 border rounded-sm px-2 p-1 text-slate-100 font-medium text-lg m-3'>Sign Up</button>
+                        </Link>
                     </div>
                 </div>
             </div>

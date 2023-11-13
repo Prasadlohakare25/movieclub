@@ -1,4 +1,6 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function SignIn() {
     return (
@@ -13,9 +15,15 @@ export default function SignIn() {
                     <input type='email' name='user-email' placeholder='Enter your email' className='p-1 border-2 border-slate-700 m-1 font-normal px-4 text-black' required /><br />
                     <label for='user-pass'>Password</label><br />
                     <input type='password' name='user-pass' placeholder='xxxxxx' className='p-1 border-2 border-slate-700 m-1 font-normal px-4 text-black' required /><br />
-                    <button className='bg-red-700 m-5 p-1 border rounded-lg px-7 border-slate-950 text-gray-50'>Sign In</button><br/>
+
+                    <Link to='/Movie'>
+                        <button className='bg-red-700 m-5 p-1 border rounded-lg px-7 border-slate-950 text-gray-50'>Sign In</button><br />
+                    </Link>
+
                     <p className='font-light font-serif'>If not a member then Sign Up</p>
-                    <button className='bg-slate-700 border rounded-lg px-3 border-slate-50 text-gray-50 font-serif'>Sign Up</button>
+                    <Link to='/Sign Up'>
+                        <button className='bg-slate-700 border rounded-lg px-3 border-slate-50 text-gray-50 font-serif'>Sign Up</button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,19 +1,17 @@
 import { React } from 'react';
+import Img1 from "./images/img2.jpg";
 
-export default function MovieCard() {
+export default function MovieCard(movie) {
     return (
-        <div className='bg-zinc-900 h-screen text-white'>
-            <navbar className='flex bg-black shadow-lg'>
-                <h1 className='flex-1 text-red-600 font-extrabold text-4xl p-4'>MovieClub</h1>
-                <div className='flex-2 text-white'>
-                    <h1 className='border border-slate-50 m-4 p-1'> UserName</h1>
-                </div>
-            </navbar>
-            <div className='divOne text-white font-poppins p-4'>
-                <h1 className='font-extrabold text-3xl my-3 '>Movies</h1>
-                <p>Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.</p>
+        <div className='h-75 w-60 border-4 rounded-lg p-0 border-slate-600'>
+            <div className='h-35 w-55 p-0 m-0'>
+                <img src={movie.src} alt={movie.movieName} className='object-fill' />
             </div>
-            {/* here we are going to create component which will show the category and movies related to it. */}
+            <div className='h-25 w-55 m-0 p-0 bg-red-300'>
+                <h2 className='h-15'>{movie.movieName}</h2>
+                {/* <p className='h-10'>{person.courseDes}</p> */}
+            </div>
         </div>
-    )
+
+    );
 }
